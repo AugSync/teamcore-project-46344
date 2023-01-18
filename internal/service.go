@@ -20,6 +20,18 @@ type Answer struct {
 	Answer   string `json:"answer"`
 }
 
+type QuestionsResponse struct {
+	Title   string         `json:"titulo"`
+	Date    string         `json:"dia"`
+	Data    []QuestionInfo `json:"info"`
+	Version int            `json:"api_version"`
+}
+
+type QuestionInfo struct {
+	QuestionID int    `json:"pregunta_id"`
+	Question   string `json:"pregunta"`
+}
+
 type Service interface {
 	GetQuestions(*fasthttp.RequestCtx) (QuestionsData, error)
 }

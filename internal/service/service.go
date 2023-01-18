@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"os"
 
 	"github.com/augsync/teamcore-project-46344/internal"
 	"github.com/valyala/fasthttp"
@@ -26,7 +27,12 @@ func (s *service) GetQuestions(ctx *fasthttp.RequestCtx) (internal.QuestionsData
 	// fasthttp does not automatically request a gzipped response.
 	// We must explicitly ask for it.
 
-	var bearer = "Bearer " + "token"
+	token := os.Getenv("API_TOKEN")
+	if token == "" {
+		return questions, fmt.Errorf("Missing api token")
+	}
+
+	var bearer = "Bearer " + token
 
 	req.Header.Set("Accept-Encoding", "gzip")
 	req.Header.Set("Authorization", bearer)

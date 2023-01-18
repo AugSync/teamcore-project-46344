@@ -3,8 +3,13 @@
   "cSpell.words": [
     "augsync",
     "fasthttp",
+    "fasthttputil",
+    "gcloud",
     "github",
+    "godotenv",
     "httptransport",
+    "Inmemory",
+    "joho",
     "teamcore",
     "valyala"
   ]

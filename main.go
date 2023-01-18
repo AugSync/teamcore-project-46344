@@ -6,10 +6,13 @@ import (
 
 	"github.com/augsync/teamcore-project-46344/internal/httptransport"
 	"github.com/augsync/teamcore-project-46344/internal/service"
+	"github.com/joho/godotenv"
 	"github.com/valyala/fasthttp"
 )
 
 func main() {
+	godotenv.Load()
+
 	// Determine port for HTTP service.
 	port := os.Getenv("PORT")
 	if port == "" {
