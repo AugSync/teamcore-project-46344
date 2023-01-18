@@ -5,8 +5,16 @@
 ```
 [GET] /questions
 
-Get questions formatted from API provider. 
+Get questions formatted from API provider.
 ```
+
+## See live preview
+
+teamcore-project-46344Región
+
+us-central1URL
+
+https://teamcore-project-46344-i5a5f2eqsq-uc.a.run.app
 
 ## Deployment GCP
 
