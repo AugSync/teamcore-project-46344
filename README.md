@@ -28,6 +28,12 @@ Create a `.env` file using his respective example.
 
 - Visit your deployed service by opening the service URL in a web browser.
 
+## Tests
+
+Run tests using the following command:
+
+`go test`
+
 ## Inspirations
 
 #### Folders structure
