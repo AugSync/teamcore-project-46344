@@ -1,5 +1,13 @@
 # teamcore-project-46344
 
+## Endpoints
+
+```
+[GET] /questions
+
+Get questions formatted from API provider. 
+```
+
 ## Deployment GCP
 
 ### How to config envs
